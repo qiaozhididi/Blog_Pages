@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 引入本地favicon图标 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <title>乔治弟弟|导航页</title>
+  </head>
+  <body>
+    <div class="blog-slider">
+      <div class="blog-slider__wrp swiper-wrapper">
+        <div class="blog-slider__item swiper-slide">
+          <div class="blog-slider__img">
+            <img src="./images/GitHub.png" alt="GitHub" />
+          </div>
+          <div class="blog-slider__content">
+            <div class="blog-slider__title">
+              <i class="fa fa-github"></i>&nbsp&nbsp<span class="text"
+                >乔治弟弟 GitHub</span
+              >
+            </div>
+            <div class="blog-slider__text">
+              开源代码的部分存放了一些自己学习某些技术栈的笔记以及一些在在校期间做的项目。
+            </div>
+            <a href="https://github.com/qiaozhididi" class="blog-slider__button"
+              >点击跳转</a
+            >
+          </div>
+        </div>
+        <div class="blog-slider__item swiper-slide">
+          <div class="blog-slider__img">
+            <img src="./images/CodePen.png" alt="CodePen" />
+          </div>
+          <div class="blog-slider__content">
+            <div class="blog-slider__title">
+              <i class="fa fa-codepen"></i>&nbsp&nbsp<span class="text"
+                >乔治弟弟 CodePen</span
+              >
+            </div>
+
+            <div class="blog-slider__text">
+              这是我的CodePen，时不时会写了一些前端的基础小组件还有一些花里胡哨并且没什么用的东西。
+            </div>
+            <a href="https://codepen.io/qzfrato" class="blog-slider__button"
+              >点击跳转</a
+            >
+          </div>
+        </div>
+        <div class="blog-slider__item swiper-slide">
+          <div class="blog-slider__img">
+            <img src="./images/tx.png" alt="个人博客" />
+          </div>
+          <div class="blog-slider__content">
+            <div class="blog-slider__title">
+              <i class="fa fa-desktop"></i>&nbsp&nbsp<span class="text"
+                >乔治弟弟 Blog</span
+              >
+            </div>
+            <div class="blog-slider__text">
+              <h2>由于云服务器过期目前处于维护阶段</h2>
+              日常会上传一些做项目的时候遇到问题的debugger方法，还有一些自学的笔记，或者是好用的软件的分享。
+            </div>
+            <a
+              href="http://blog.qzdd.xyz"
+              class="blog-slider__button"
+              style="pointer-events: none"
+              >点击跳转</a
+            >
+          </div>
+        </div>
+        <div class="blog-slider__pagination"></div>
+      </div>
+<!-- 底部foot 显示copyright -->
+<div style="position: fixed; left: 0; bottom: 0; width: 100%;  color: white; text-align: center; padding: 10px 0;">
+  Copyright &reg; 2024 All Rights 乔治弟弟.
+</div>
+    </div>
+    <script>
+      var swiper = new Swiper(".blog-slider", {
+        spaceBetween: 30,
+        effect: "fade",
+        loop: true,
+        mousewheel: {
+          invert: false,
+        },
+        pagination: {
+          el: ".blog-slider__pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
