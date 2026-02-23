@@ -69,11 +69,11 @@
               >
             </div>
             <div class="blog-slider__text">
-              <h2>由于云服务器过期目前处于维护阶段</h2>
-              日常会上传一些做项目的时候遇到问题的debugger方法，还有一些自学的笔记，或者是好用的软件的分享。
+              <h2>这是一个Vercel部署的个人博客(可能需要梯子)</h2>
+              日常会上传一些做项目的时候遇到问题的debugger方法，还有一些自学的笔记，使用obsidian同步，目前处于测试阶段,所以笔记还没有同步到项目中去。
             </div>
             <a
-              href="http://blog.qzdd.xyz"
+              href="https://blog-nuxt-qiaozhididis-projects.vercel.app/"
               class="blog-slider__button"
               style="pointer-events: none"
               >点击跳转</a
@@ -82,21 +82,40 @@
         </div>
         <div class="blog-slider__pagination"></div>
       </div>
-<!-- 底部foot 显示copyright -->
-<div style="position: fixed; left: 0; bottom: 0; width: 100%;  color: white; text-align: center; padding: 10px 0;">
-  Copyright &reg; 2024 All Rights 乔治弟弟.
-</div>
+      <!-- 底部foot 显示copyright -->
+      <div
+        style="
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          color: white;
+          text-align: center;
+          padding: 10px 0;
+        "
+      >
+        Copyright &reg; 2026 All Rights Reserved 乔治弟弟.
+      </div>
     </div>
     <script>
       var swiper = new Swiper(".blog-slider", {
+        // 设置滑块之间的间距
         spaceBetween: 30,
+        // 设置滑动效果为淡入淡出
         effect: "fade",
+        // 设置为循环模式
         loop: true,
+        // 配置鼠标滚轮控制
         mousewheel: {
           invert: false,
+          // 在 Swiper 6+ 版本中，通常不需要额外配置来启用 mousewheel，
+          // 但如果需要自定义行为，可以在这里添加更多配置
         },
+        // 配置分页器
         pagination: {
+          // 分页器的 HTML 元素选择器
           el: ".blog-slider__pagination",
+          // 是否允许点击分页点进行导航
           clickable: true,
         },
       });
